@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(8, 64, 72);
+    color: azure;
+}
+
+.container{
+    width:310px;
+    height: 400px;
+    max-width: 37.5em;
+    background-color: white;
+    color:black;
+    padding: 3em 0.5em;
+    position: absolute;
+    transform: translate(-50%,50%);
+    top:-10%;
+    left:50%;
+    border-radius: 0.5em;    
+}
+
+h1{
+    text-align:center;
+    color:rgb(192, 192, 192);
+    width:100%;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+
+}
+
+.draggable-objects, .drop-points  {
+    display: flex;
+}
+
+.drop-points {
+    position:absolute;
+    top:5px;
+    left:5px;
+}
+
+.draggable-objects {
+    position:absolute;
+    top:310px;
+    left:15px;
+}
+
+.draggable-tile {
+    background-color: green;
+    border: black 2px solid;
+    border-radius: 0.0em;
+    width: 50px;
+    height: 50px;
+}
+
+.set-tile {
+    background-color: green;
+    border: black 2px solid;
+    border-radius: 0.0em;
+    width: 50px;
+    height: 50px;
+}
+
+.special-tile {
+    background-color: rgb(230, 0, 0);
+    border: black 2px solid;
+    border-radius: 0.0em;
+    width: 50px;
+    height: 50px;
+}
+
+.board-tile {
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 0.0em;
+    width: 50px;
+    height: 50px;
+}
+
+.letter{
+    color: white;
+    font-size:24px;
+    text-align: center; 
+    display: table;
+    margin-left: auto;
+    margin-right: auto;    
+    margin-top: 6px;  
+}
+
+.points{
+    color: white;
+    position: absolute;
+    font-size:10px;    
+    top:28px;
+    right:2px;
+    text-align: right;
+}
+
+.bonus{
+    color: white;
+    position: absolute;
+    font-size:10px;    
+    top:2px;
+    left:2px;
+    text-align: left;
+}
